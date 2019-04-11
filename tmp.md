@@ -1,0 +1,437 @@
+<iframe scrolling="no" id="hearthis_at_track_1431588" width="90%" height="130" src="https://hearthis.at/embed/1431588/transparent/?hcolor=&color=&style=2&block_size=2&block_space=1&background=0&waveform=0&cover=0&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay"><p>Listen to <a href="https://hearthis.at/bdrcmpwp/the-brotherhood-of-house-109-ft-reece-johnson-mr-shadow/">The Brotherhood Of House 109 ft Reece Johnson &amp; Mr Shadow</a><span>by</span><a href="https://hearthis.at/bdrcmpwp/">THE BROTHERHOOD OF HOUSE</a> <span>on</span> <a href="https://hearthis.at/">hearthis.at</a></p></iframe>
+
+
+## Surf : Secure : via Proxy : Zend2.com
+
+<form action="http://zend2.com/includes/process.php?action=update1" method="post" id="frm">
+ <input type="text"     name="u" value=""   id="id_url"                        />
+ <input type="checkbox" name="encodeURL"    id="encodeURL"    checked="checked"/>
+ <input type="checkbox" name="encodePage"   id="encodePage"                    />
+ <input type="checkbox" name="allowCookies" id="allowCookies" checked="checked"/>
+ <input type="checkbox" name="stripJS"      id="stripJS"      checked="checked"/>
+ <input type="checkbox" name="stripObjects" id="stripObjects" checked="checked"/>
+</form>
+
+https://jolygram.com/profile/ladydabbs710/285903122  
+https://de..com/view_video.php?viewkey=ph5b3a0cf4c6f4e  
+https://syndication.exoclick.com/splash.php?idzone=1775026&type=8&cb=1055  
+
+.
+
+## Web : Tool : Static : Convert : Staticman
+
+![Logo of Staticman](https://staticman.net/assets/images/icons/favicon-16x16.png) [Staticman](https://staticman.net) transforms user-generated content into Github. Keep your data - no third-party platforms.
+
+.
+
+## Web : Tool : E-Commerce : Shop : Snipcart.com
+
+![Logo of snipcart](https://snipcart.com/images/favicons/favicon-16x16.png) [Snipcart](https://snipcart.com/) adds a cart platform to your blog, CMS, framework, ... .
+
+.
+
+## Popup-watch in nice words via browser and cron
+
+The website https://7070.org says s.th. like: "Es ist fünf vor zwölf - every 300 sec.
+What if it pops up and fills the screen regularly to show you that knocking-off time is comin soon?
+Executable line instead of interactive _crontab -e_:
+```
+(crontab -l 2>/dev/null ; echo "*/2 * * * * pidof firefox && DISPLAY=:0 firefox --new-tab 7070.org") | crontab
+```
+WTF:  
+**2>/dev/null**: Prevents this possible stdout: "no crontab for user". (https://stackoverflow.com/a/878647)  
+**pidof**: To prevent FF from hosing all your 1000 open tabs use a running instance.  
+**DISPLAY=:0** doesn't work? Check display number with /usr/bin/w.
+
+.
+
+## Cloud : host : 
+
+instantview, up download
+- ![Logo of userscloud.com](https://userscloud.com/avatar/logo_s.jpg) https://userscloud.com
+- ![Logo of sendit.cloud](https://sendit.cloud/favicon.ico) https://sendit.cloud
+
+stream, instantview, up download
+- ![Logo of openload.co](https://openload.co/favicon.ico) https://openload.co
+
+.
+
+## Backup : cloud &amp; on premise (via CLI) : encrypted : Duplicacy
+
+![Logo of Duplicacy](https://duplicacy.com/img/duplicacy.png) https://duplicacy.com
+
+- deduplication
+- incremental
+- encryption
+- migration
+
+.
+
+## PCS.CMD: free in %
+```
+free -ht | grep Mem | awk '{print $7/$2 * 100.0}'
+55.45
+
+free -ht | grep Mem | awk '{print $4/$2 * 100.0}'
+26.3158
+
+echo Free memory: $(free | grep Mem -h | awk '{print $3/$2 * 100}' | cut -d. -f1)%
+Free memory: 4%
+```
+
+https://stackoverflow.com/questions/10585978/
+
+.
+
+## PCS.CMD: / directory is full
+
+Only greenhorns have /var residing in /  
+If elsewhere is plenty of space - then move 'n' bind.
+
+#### Why mount --bind? 
+
+|        | mount --bind | symlinks |
+|--------|:------------:|:--------:|
+| chroot |       1      |     0    |
+| webdav |       1      |     0    |
+
+https://askubuntu.com/questions/205841/
+
+#### Example: Docker didn't accept new images cause:
+```
+$ df -hT	
+Filesystem   Type      Size  Used Avail Use% on
+-------------------------------------------------------
+/dev/sda2    ext4      1.9G  1.4G  408M  78% /
+```
+
+```
+$ systemctl cat docker
+$ docker ps -a
+$ sudo systemctl stop   docker
+$      systemctl status docker
+$ sudo du -h /var/lib/docker
+$ sudo du -h /var/lib/docker | less
+$ sudo du -h /var/lib/docker | grep 'M'
+$ sudo mkdir                   /lvbtr/+var+lib+docker
+$ sudo mv -v /var/lib/docker/* /lvbtr/+var+lib+docker
+$ sudo mount --bind            /lvbtr/+var+lib+docker /var/lib/docker
+$ echo                        '/lvbtr/+var+lib+docker /var/lib/docker none bind' | sudo tee -a /etc/fstab
+$ sudo systemctl start docker
+```
+.
+
+## Script : server : webserver : netcat
+```
+while true; do sudo echo -e "HTTP/1.1 200 OK\r\n\r\n<h1>$(hostname) is live>/h1<$(date +%F)" | sudo nc -vl -p 80 ; done &
+```
+.
+
+## Program : media : player : CLI : music
+
+*5 CLI music player*  
+https://www.bettertechtips.com/linux/cli-music-player/
+
+*Command*
+```
+play(){ gnome-mpv $(wget -O- -U'Mozilla/4.0' $1 | grep 'streamUrl' | grep -m1 -Eo 'http://[^"]*'); }; play https://www.radio.net/s/relaxingjazz
+```
+- https://www.radio.net/s/freenorthkorea
+- https://www.radio.net/s/relaxingjazz
+- https://www.radio.net/s/chfmhouse
+- chicago http://38.107.243.218:8218/stream
+- korea http://media.fnkradio.com/radio/bc_00/1002satFNKR1300.mp3
+
+*Mplayer low on cache?*
+```
+mplayer -cache 8192 -cache-min 80 $URL   # https://askubuntu.com/questions/189440/
+```
+*Radio: mplayer + python = *  
+http://www.coderholic.com/pyradio/
+
+*Recorder / player for ALSA: avconv + arecord*
+https://askubuntu.com/questions/291910
+
+*URL / IP search*  
+- https://www.radio.net/genre
+- https://www.xatworld.com/radio-search
+
+.
+
+## NET : Portscan : test online
+
+http://www.ipfingerprints.com/portscan.php  
+http://ports.my-addr.com/check-all-open-ports-online.php  
+
+.
+
+## PCS.APP.MED Media Server
+https://alternativeto.net/software/xbmc-media-center/
+
+#### Ampache
+https://alternativeto.net/software/ampache/
+
+#### AirSonic or LibreSonic Docker
+https://airsonic.github.io/docs/install/docker/  
+https://hub.docker.com/r/airsonic/airsonic/  
+https://forums.unraid.net/topic/52140-support-linuxserverio-libresonic/  
+https://github.com/tonipes/libresonic-docker  
+
+#### Test-Media
+```
+wget -U 'Mozilla/4.0' http://www.swiatobrazu.pl/zdjecie/artykuly/350404/waclaw-wantuch-1-akt-w-polskiej-fotografii-.jpg
+wget -U 'Mozilla/4.0' http://view.stern.de/de/picture/nsfw/3549778/akt-model-woman-art-female-black-and-620.jpg
+wget -U 'Mozilla/4.0' http://view.stern.de/de/picture/2919441/akt-art-highkey-black-white-sculpture-grey-940.jpg
+wget -U 'Mozilla/4.0' http://www.lowbird.com/data/images/2011/01/0065.jpg
+wget -U 'Mozilla/4.0' http://www.swiatobrazu.pl/zdjecie/artykuly/116294/akt-w-suwalkach.jpg
+wget -U 'Mozilla/4.0' https://heikole-art.net/wp-content/uploads/photo-gallery/IMG_6401.jpg
+wget -U 'Mozilla/4.0' https://iso.500px.com/wp-content/uploads/2015/06/dancer_cover-1500x1000.jpeg
+wget -U 'Mozilla/4.0' http://1.bp.blogspot.com/-rd0UFCCRSNs/TtpmDAE8XYI/AAAAAAAAHJ4/fs2NzAr-b_g/s1600/120508.jpg
+wget -U 'Mozilla/4.0' http://1.bp.blogspot.com/-kE7HnbtZIA4/VqZV1IImBNI/AAAAAAAD-x8/A1DXGEKD4Xg/s1600/espalda-modelo-desnuda-waclaw-wantuch.JPG
+wget -U 'Mozilla/4.0' http://thefappeningblog.com/wp-content/uploads/2017/11/Hunter-McGrady-Nude-5-thefappeningblog.com_.jpg
+wget -U 'Mozilla/4.0' http://s2.glbimg.com/7qyaG8qVlo3FYR2hn1yaFzfC_es=/smart/e.glbimg.com/og/ed/f/original/2015/03/23/goddess2-1247x1247.jpg
+wget -U 'Mozilla/4.0' https://get.pxhere.com/photo/black-and-white-girl-woman-model-darkness-monochrome-grace-hands-beauty-sexy-nude-body-posture-photoshoot-elegance-breast-nipple-erotica-beautiful-girl-naked-girl-without-clothes-sense-monochrome-photography-art-model-1191518.jpg
+```
+
+#### Container: AirSonic
+```
+docker create --name=air -ePUID=1000 -eGUID=1000 -p4040:4040 --restart unless-stopped -v/root/5:/media linuxserver/airsonic
+
+curl ifconfig.io
+40.117.119.219:4040
+
+docker volume inspect data
+```
+.
+
+## Web : html : markdown : convert : pandoc
+http://ct.de/y1nh
+
+```
+apt install
+echo "--\ntitle: MY_TITLE\nauthor:\n - author 1\n - author 2\ncopy: Kein Copyright" >> test.md
+pandoc \
+ -o [https://]test.html \
+ [-s]                   \
+ [--template=tmpl.html] \
+ [--toc [--toc-depth=XXX]]                \
+ test.md[doc|...]          # /s = standalone: inkl. skeleton
+echo "<title>$title$</title></head><body><header>$if (toc)$\n$toc$\n$endif$</header>$body$<footer>$copy$</footer>" >> tmpl.html
+```
+.
+
+## GFX : photos : HQ : VastPhotos
+
+![Logo of VastPhotos.com](https://vastphotos.com/files/uploads/favicon.png) [VastPhotos](https://vastphotos.com) 
+
+black & white, colorful, incredible, light, photos, photograph
+
+.
+
+## Program : sync : cloud : odrive : control via bash
+https://forum.odrive.com/t/bash-script-snippet-to-display-updating-sync-state-with-pause-and-quit/1588
+
+Tags: app, backup, borg deduplicating archiver, monitor, tool, 
+
+.
+
+## Program : backup : deduplicated : "Borg Deduplicating Archiver"
+https://www.borgbackup.org/
+
+Tags: app, backup, borg deduplicating archiver, compression, encryption, fuse,
+
+.
+
+## Net : Scy : VPN : HowTo
+https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-or-16-04-lts/
+
+.
+
+## Data : Convert : Online : "online-convert.com"
+
+1001 possibilities at [Online-Convert](https://online-convert.com)
+
+.
+
+## Web : File Transfer : User 2 User : TakeAFile
+
+Transfer files w/o intermediate cloud only via browser at [Take A File](https://takeafile.com). Any size, confidential, w/o registration, funded by EU.
+
+.
+
+## Program : Remote Filesystem : Google Drive : GUI : "ODrive"
+
+ODrive = OpenDrive AppImage [Explanation on 2DayGeek](https://www.2daygeek.com/odrive-open-drive-google-drive-gui-client-for-linux/)
+
+.
+
+## Program : App : Web App : link collection : App Scope
+https://appsco.pe/
+
+Tags: browser based, home screen, no download, progressive web app, 
+
+.
+
+## Web : html : badges : Shield.io
+https://shields.io
+
+Tags: button, dynamic, embedd, make, meta data, query string parameter, svg, tool, URL dependent,
+
+.
+
+## Web : UIX : link collection : Sans Francisco
+https://sansfrancis.co
+
+Tags: app, collaboration, color, design, foto, icon, inspire, layout, presentation, tool, typo, 
+
+.
+
+## Program : MultiMedia : Player : cmus
+https://cmus.github.io
+
+Tags: AAC, bash script, CLI, fast, filter, FLAC, mp3, themes, WAV, vi-like
+
+.
+
+## Security : Credentials : Identity Leak Checker
+
+- https://sec.hpi.uni-potsdam.de/ilc/
+- https://HaveIBeenPwned.com
+
+Tags: credential-stuffing-list, hacked, Hasso-Plattner-Institut, Troy Hunt,
+
+.
+
+## Program : Web : Server : Cert : ACMA : "CertBot"
+https://certbot.eff.org/docs/using.html
+```
+cat <<'EOF' > /etc/apt/sources.list
+#   bwn for eff.org's certbot                                                                    
+# https://backports.debian.org/Instructions/                                                      
+deb http://deb.debian.org/debian stretch-backports main                                           
+EOF
+apt-get update                                                                                    
+apt-get -t stretch-backports install certbot
+```
+
+.
+
+## Program : Backup : Snapshots : "Cya"
+linux magazin 03/19 "Snapschuesse"
+
+- Qt-FSArchiver
+- https://CyberWS.com/bash/cya
+- https://gitub.com/cleverwise/cya
+
+.
+
+## Program : Web : Webserver : static : "WebOrf"
+https://ltworf.github.io/weborf
+```
+weborf --basedir MY_WWW [-i INTERFACE               \ # default: all interfaces
+       --index   LIST_OF_FILES_INTERPRETED_AS_INDEX \ # default: directory indexing; index.htm ignored
+        -p       PORT                               \ # default: 8080
+        -V       VIRT_HOSTS]                          # for multiple dirs
+```
+Tags: apt, CLI, local, static, virt. Hosts, webdav
+
+
+
+## Program : Web : Webserver : static : "Boa"
+http://www.boa.org/documentation/
+http://www.boa.org/documentation/boa-2.html
+
+Tags: chroot no, CLI, compile, static
+
+.
+
+## Program : Web : Webserver : static : "DarkHTTP"
+https://unix4lyfe.org/darkhttpd/
+
+no .deb etc
+
+Tags: chroot, CLI, compile, resuming, static, streaming, 
+
+.
+
+## WEB : html : fonts
+## Program : Filesystem : Remote : Google Drive : Fuse : "Ocamlfuse"
+
+Google Drive Ocamlfuse [Explanation on 2DayGeek](https://www.2daygeek.com/mount-access-google-drive-on-linux-with-google-drive-ocamlfuse-client/)
+
+.
+
+## Machine : Config : Time : NetworkTimeProtocol
+```
+   # control
+$ timedatectl   # or
+$ systemctl status systemd-timesyncd
+
+   # Find timeserver: [NtpPool.org](https://NtpPool.org/zone)
+$ MY_TIMESERVER=europe.pool.ntp.org
+
+   # delete, dry-run and then execute (with '-i')
+$ sed -e "/^[#]NTP=/d" -e "s/Time]/Time]\nNTP=${MY_TIMESERVER}/" /etc/systemd/timesyncd.conf
+
+   # restart
+$ systemctl restart systemd-timesyncd
+```
+
+.
+
+## Machine : Maintain : Container : Docker : Remotely : "ssh-docker"
+
+From [PyPi.org](https://pypi.org/project/ssh-docker/)
+
+.
+
+## Machine : Config : ScreenRC : 1001 Tips
+
+ServerFault users [https://serverfault.com/questions/3740/](screenrc)
+
+.
+
+## Program : Office : Mail : CLI : diverse
+
+Via [TecMint](https://www.tecmint.com/best-commandline-email-clients-for-linux/)
+
+.
+
+## Program : Android : Apps : Building : "App Inventor"
+
+[Tutorial](http://appinventor.mit.edu/explore/tutorials.html) for the MIT [App Inventor](http://appinventor.mit.edu/appinventor-sources/) 
+
+
+<!-- 
+## WEB.VRW..video+mobile+etc  https://bespohk.com/
+<video class="masthead__video" id="feature" loop autoplay preload="auto" poster="/img/headers/video-cover.jpg">
+ <source src="//static.bespohk.com/video/home.mp4" type="video/mp4">
+</video>
+--> 
+
+.
+
+## Web : Hosting : Temporary : For Backup, sharing, webpublishing, etc up to 10 GB
+
+Upload via SHell-Yeah for 14 days to [Transfer.sh](https://www.transfer.sh/). Markdown appears beautily formatted.
+
+
+---
+
+```
+alias screenhelp='echo "Rename session: C-a :sessionname NEWNAME \n Show, create, rename, next window-title: C-a \", c, A, n \n 
+
+https://unix.stackexchange.com/questions/20989/
+
+(`echo ${STY} | sed -e 's/[0-9]*\.//g'`:${WINDOW}:`screen -Q title`)   # compiled w/ 'query'
+
+
+(${STY}:${WINDOW})
+
+PS1='@\h::${STY#[0-9]*.}:${WINDOW} '
+
+removes the process number from ${STY}
+includes the window number (as mentioned "at creation time")
+includes the window title (as returned from screen -Q title)
+
+```
