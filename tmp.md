@@ -2,8 +2,8 @@
 
 ## Web : Server : Access server w/ reverse proxy and Let's Encrypt
 
-(Franz Geffke)[https://f-a.nz/about/] shows code lines at (Gitea behind NGINX)[https://f-a.nz/dev/install-gitea-behind-nginx-on-debian/]
-and (Syncthing with NGINX reverse proxy)[https://f-a.nz/dev/setup-syncthing-on-debian-server-with-nginx-reverse-proxy/] 
+[Franz Geffke](https://f-a.nz/about/) shows code lines at [Gitea behind NGINX](https://f-a.nz/dev/install-gitea-behind-nginx-on-debian/)
+and [Syncthing with NGINX reverse proxy](https://f-a.nz/dev/setup-syncthing-on-debian-server-with-nginx-reverse-proxy/) 
 which might help us reaching docker containers w/ installed SSL certs.
 
 Tags:  certbot, LE, Let's Encrypt, nginx, SSL, 
