@@ -1,5 +1,15 @@
 <iframe scrolling="no" id="hearthis_at_track_1431588" width="90%" height="130" src="https://hearthis.at/embed/1431588/transparent/?hcolor=&color=&style=2&block_size=2&block_space=1&background=0&waveform=0&cover=0&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay"><p>Listen to <a href="https://hearthis.at/bdrcmpwp/the-brotherhood-of-house-109-ft-reece-johnson-mr-shadow/">The Brotherhood Of House 109 ft Reece Johnson &amp; Mr Shadow</a><span>by</span><a href="https://hearthis.at/bdrcmpwp/">THE BROTHERHOOD OF HOUSE</a> <span>on</span> <a href="https://hearthis.at/">hearthis.at</a></p></iframe>
 
+## Web : Server : Access server w/ reverse proxy and Let's Encrypt
+
+(Franz Geffke)[https://f-a.nz/about/] shows code lines at (Gitea behind NGINX)[https://f-a.nz/dev/install-gitea-behind-nginx-on-debian/]
+and (Syncthing with NGINX reverse proxy)[https://f-a.nz/dev/setup-syncthing-on-debian-server-with-nginx-reverse-proxy/] 
+which might help us reaching docker containers w/ installed SSL certs.
+
+Tags:  certbot, LE, Let's Encrypt, nginx, SSL, 
+
+.
+
 
 ## Surf : Secure : via Proxy : Zend2.com
 
@@ -93,7 +103,7 @@ If elsewhere is plenty of space - then move 'n' bind.
 |        | mount --bind | symlinks |
 |--------|:------------:|:--------:|
 | chroot |       1      |     0    |
-| webdav |       1      |     0    |
+| webdav |       1      |     0    | <!-- https://www.tablesgenerator.com/markdown_tables -->
 
 https://askubuntu.com/questions/205841/
 
