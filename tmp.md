@@ -18,15 +18,15 @@ https://syndication.exoclick.com/splash.php?idzone=1775026&type=8&cb=1055
 
 .
 
-## Web : Tool : Static : Convert : Staticman
 
-![Logo of Staticman](https://staticman.net/assets/images/icons/favicon-16x16.png) [Staticman](https://staticman.net) transforms user-generated content into Github. Keep your data - no third-party platforms.
+## Web : Tool : Static : Convert : Staticman
+![Logo of Staticman](https://www.google.com/s2/favicons?domain=staticman.net) [Staticman](https://staticman.net) <!-- https://staticman.net/assets/images/icons/favicon-16x16.png --> transforms user-generated content into Github. Keep your data - no third-party platforms.
 
 .
 
-## Web : Tool : E-Commerce : Shop : Snipcart.com
+## Web : Tool : E-Commerce : Shop : SnipCart.com
+![Logo of SnipCart](https://www.google.com/s2/favicons?domain=snipcart.com) [Snipcart](https://snipcart.com) <!-- https://snipcart.com/images/favicons/favicon-16x16.png --> adds a cart platform to your blog, CMS, framework, ... .
 
-![Logo of snipcart](https://snipcart.com/images/favicons/favicon-16x16.png) [Snipcart](https://snipcart.com/) adds a cart platform to your blog, CMS, framework, ... .
 
 .
 
@@ -45,14 +45,14 @@ WTF:
 
 .
 
-## Cloud : host : 
+## Cloud : host : diverse
 
 instantview, up download
-- ![Logo of userscloud.com](https://userscloud.com/avatar/logo_s.jpg) [UsersCloud.com](https://userscloud.com)
-- ![Logo of sendit.cloud](https://sendit.cloud/favicon.ico) [SendIt.cloud](https://sendit.cloud)
+- ![Logo of userscloud.com](https://www.google.com/s2/favicons?domain=https://userscloud.com) [UsersCloud.com](https://userscloud.com) <!-- https://userscloud.com/avatar/logo_s.jpg -->
+- ![Logo of sendit.cloud](https://www.google.com/s2/favicons?domain=https://sendit.cloud/) [SendIt.cloud](https://sendit.cloud) <!-- https://sendit.cloud/favicon.ico -->
 
 stream, instantview, up download
-- ![Logo of openload.co](https://openload.co/favicon.ico) [OpenLoad.co](https://openload.co)
+- ![Logo of openload.co](https://www.google.com/s2/favicons?domain=https://openload.co) [OpenLoad.co](https://openload.co) <!-- https://openload.co/favicon.ico -->
 
 .
 
@@ -193,7 +193,7 @@ wget -U 'Mozilla/4.0' http://s2.glbimg.com/7qyaG8qVlo3FYR2hn1yaFzfC_es=/smart/e.
 wget -U 'Mozilla/4.0' https://get.pxhere.com/photo/black-and-white-girl-woman-model-darkness-monochrome-grace-hands-beauty-sexy-nude-body-posture-photoshoot-elegance-breast-nipple-erotica-beautiful-girl-naked-girl-without-clothes-sense-monochrome-photography-art-model-1191518.jpg
 ```
 
-#### Container: AirSonic
+#### Container: "AirSonic"
 ```
 docker create --name=air -ePUID=1000 -eGUID=1000 -p4040:4040 --restart unless-stopped -v/root/5:/media linuxserver/airsonic
 
@@ -204,7 +204,7 @@ docker volume inspect data
 ```
 .
 
-## Web : html : markdown : convert : pandoc
+## Web : html : Markdown : Convert : "Pandoc"
 http://ct.de/y1nh
 
 ```
@@ -220,25 +220,25 @@ echo "<title>$title$</title></head><body><header>$if (toc)$\n$toc$\n$endif$</hea
 ```
 .
 
-## GFX : photos : HQ : VastPhotos
+## GFX : Photos : HQ : "VastPhotos"
 
 ![Logo of VastPhotos.com](https://vastphotos.com/files/uploads/favicon.png) [VastPhotos](https://vastphotos.com) 
 
-black & white, colorful, incredible, light, photos, photograph
+Tags: black & white, colorful, incredible, light, photos, photograph
 
 .
 
-## Program : sync : cloud : odrive : control via bash
+## Program : Sync : Cloud : Odrive : control via bash
 https://forum.odrive.com/t/bash-script-snippet-to-display-updating-sync-state-with-pause-and-quit/1588
 
 Tags: app, backup, borg deduplicating archiver, monitor, tool, 
 
 .
 
-## Program : backup : deduplicated : "Borg Deduplicating Archiver"
-https://www.borgbackup.org/
+## Program : Backup : Deduplicated : "Borg Deduplicating Archiver"
+![Logo of BorgBackup.org](https://www.google.com/s2/favicons?domain=www.borgbackup.org) [BorgBackup](https://www.borgbackup.org/)
 
-Tags: app, backup, borg deduplicating archiver, compression, encryption, fuse,
+Tags: app,  archiver, backup, compression, deduplicating, encryption, fuse,
 
 .
 
@@ -295,17 +295,15 @@ Tags: AAC, bash script, CLI, fast, filter, FLAC, mp3, themes, WAV, vi-like
 
 ## Security : Credentials : Identity Leak Checker
 
-- ![Logo of Have I Been Pwned (HIBP)](https://haveibeenpwned.com/favicon.ico) [Have I Been Pwned (HIBP)](https://haveibeenpwned.com/) 
-- ![Logo of Hasso Plattner Institute](https://sec.hpi.uni-potsdam.de/ilc/ico/favicon.ico) [HPI Identity Leak Checker](https://sec.hpi.uni-potsdam.de/ilc/) 
+- ![Logo of Have I Been Pwned (HIBP)](https://www.google.com/s2/favicons?domain=haveibeenpwned.com) [Have I Been Pwned (HIBP)](https://haveibeenpwned.com/) <!-- https://haveibeenpwned.com/favicon.ico -->   
+- ![Logo of Hasso Plattner Institute](https://www.google.com/s2/favicons?domain=sec.hpi.uni-potsdam.de) [HPI Identity Leak Checker](https://sec.hpi.uni-potsdam.de/ilc/) <!-- https://sec.hpi.uni-potsdam.de/ilc/ico/favicon.ico --> 
 
 Tags: credential-stuffing-list, hacked, Hasso-Plattner-Institut, Troy Hunt,
 
 .
 
 ## Program : Web : Server : Cert : ACMA : "CertBot"
-![Logo of CertBot](https://www.google.com/s2/favicons?domain=https://certbot.eff.org/) [CertBot](https://certbot.eff.org/docs/using.html)
-
-EFF's tool to obtain certs from Let's Encrypt and auto-enable HTTPS on the server. Is too a client for any other ACME-CA.
+![Logo of CertBot](https://www.google.com/s2/favicons?domain=certbot.eff.org) [CertBot](https://certbot.eff.org/docs/using.html) EFF's tool to obtain certs from Let's Encrypt and auto-enable HTTPS on the server. Is too a client for any other ACME-CA.
 
 ```
 cat <<'EOF' > /etc/apt/sources.list
@@ -322,11 +320,11 @@ Tags: ACME, Automatic Certificate Management Environment, CA, eff.org, Electroni
 .
 
 ## Program : Backup : Snapshots : "Cya"
-linux magazin 03/19 "Snapschuesse"
+linux magazin 03/19 "Snapsch&uuml;sse"
 
-- Qt-FSArchiver
-- https://CyberWS.com/bash/cya
-- https://gitub.com/cleverwise/cya
+- ![Logo of Qt-FSArchiver](https://www.google.com/s2/favicons?domain=sourceforge.net) [Qt-FSArchiver](https://sourceforge.net/projects/qt-fsarchiver/)
+- ![Logo of CyberWS.com](https://www.google.com/s2/favicons?domain=CyberWS.com) [Cya](https://CyberWS.com/bash/cya)
+- ![Logo of GitHub]](https://www.google.com/s2/favicons?domain=gitub.com) [Cya on GitHub](https://gitub.com/cleverwise/cya)
 
 .
 
@@ -386,7 +384,7 @@ $ systemctl restart systemd-timesyncd
 
 ## Machine : Maintain : Container : Docker : Remotely : "ssh-docker"
 
-![Logo of PyPi.org](https://pypi.org/static/images/logo-small.6eef541e.svg) from [PyPi.org](https://pypi.org/project/ssh-docker/)
+![Logo of PyPi.org](https://www.google.com/s2/favicons?domain=pypi.org) <!-- https://pypi.org/static/images/logo-small.6eef541e.svg --> from [PyPi.org](https://pypi.org/project/ssh-docker/)
 
 .
 
