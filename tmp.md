@@ -48,17 +48,17 @@ WTF:
 ## Cloud : host : 
 
 instantview, up download
-- ![Logo of userscloud.com](https://userscloud.com/avatar/logo_s.jpg) https://userscloud.com
-- ![Logo of sendit.cloud](https://sendit.cloud/favicon.ico) https://sendit.cloud
+- ![Logo of userscloud.com](https://userscloud.com/avatar/logo_s.jpg) [UsersCloud.com](https://userscloud.com)
+- ![Logo of sendit.cloud](https://sendit.cloud/favicon.ico) [SendIt.cloud](https://sendit.cloud)
 
 stream, instantview, up download
-- ![Logo of openload.co](https://openload.co/favicon.ico) https://openload.co
+- ![Logo of openload.co](https://openload.co/favicon.ico) [OpenLoad.co](https://openload.co)
 
 .
 
 ## Backup : cloud &amp; on premise (via CLI) : encrypted : Duplicacy
 
-![Logo of Duplicacy](https://duplicacy.com/img/duplicacy.png) https://duplicacy.com
+![Logo of Duplicacy](https://duplicacy.com/img/duplicacy.png) [Duplicacy.com](https://duplicacy.com)
 
 - deduplication
 - incremental
@@ -136,11 +136,9 @@ https://www.bettertechtips.com/linux/cli-music-player/
 ```
 play(){ gnome-mpv $(wget -O- -U'Mozilla/4.0' $1 | grep 'streamUrl' | grep -m1 -Eo 'http://[^"]*'); }; play https://www.radio.net/s/relaxingjazz
 ```
-- https://www.radio.net/s/freenorthkorea
-- https://www.radio.net/s/relaxingjazz
-- https://www.radio.net/s/chfmhouse
-- chicago http://38.107.243.218:8218/stream
-- korea http://media.fnkradio.com/radio/bc_00/1002satFNKR1300.mp3
+- korea        https://www.radio.net/s/freenorthkorea http://media.fnkradio.com/radio/bc_00/1002satFNKR1300.mp3
+- chicago      https://www.radio.net/s/chfmhouse      http://38.107.243.218:8218/stream
+- relaxingjazz https://www.radio.net/s/relaxingjazz
 
 *Mplayer low on cache?*
 ```
@@ -160,8 +158,10 @@ https://askubuntu.com/questions/291910
 
 ## NET : Portscan : test online
 
-http://www.ipfingerprints.com/portscan.php  
-http://ports.my-addr.com/check-all-open-ports-online.php  
+![Logo of My-Addr.com](https://www.google.com/s2/favicons?domain=http://ports.my-addr.com/) [](http://ports.my-addr.com/check-all-open-ports-online.php)
+![Logo of IPFingerPrints](https://www.google.com/s2/favicons?domain=http://www.ipfingerprints.com/) [](http://www.ipfingerprints.com/portscan.php)
+
+Tags: IP, net, network, online, port, scan, security, 
 
 .
 
@@ -266,29 +266,27 @@ ODrive = OpenDrive AppImage [Explanation on 2DayGeek](https://www.2daygeek.com/o
 .
 
 ## Program : App : Web App : link collection : App Scope
-![Logo of ](https://google.com/s2/favicons?domain=https://appsco.pe/) [App Scope](https://appsco.pe/) 
+![Logo of ](https://www.google.com/s2/favicons?domain=https://appsco.pe/) [App Scope](https://appsco.pe/) 
 
 Tags: browser based, home screen, no download, progressive web app, 
 
 .
 
 ## Web : html : badges : Shield.io
-
-![Logo of Shield.io](https://google.com/s2/favicons?domain=https://shields.io) [Shield.io](https://shields.io)
+![Logo of Shield.io](https://www.google.com/s2/favicons?domain=https://shields.io) [Shield.io](https://shields.io)
 
 Tags: button, dynamic, embedd, make, meta data, query string parameter, svg, tool, URL dependent,
 
 .
 
 ## Web : UIX : link collection : Sans Francisco
-https://sansfrancis.co
+![Logo of Sans Francisco](https://www.google.com/s2/favicons?domain=https://sansfrancis.co) [Sans Francisco](https://sansfrancis.co)
 
 Tags: app, collaboration, color, design, foto, icon, inspire, layout, presentation, tool, typo, 
 
 .
 
 ## Program : MultiMedia : Player : cmus
-
 [C* cmus](https://cmus.github.io/)
 
 Tags: AAC, bash script, CLI, fast, filter, FLAC, mp3, themes, WAV, vi-like
@@ -305,7 +303,10 @@ Tags: credential-stuffing-list, hacked, Hasso-Plattner-Institut, Troy Hunt,
 .
 
 ## Program : Web : Server : Cert : ACMA : "CertBot"
-https://certbot.eff.org/docs/using.html
+![Logo of CertBot](https://www.google.com/s2/favicons?domain=https://certbot.eff.org/) [CertBot](https://certbot.eff.org/docs/using.html)
+
+EFF's tool to obtain certs from Let's Encrypt and auto-enable HTTPS on the server. Is too a client for any other ACME-CA.
+
 ```
 cat <<'EOF' > /etc/apt/sources.list
 #   bwn for eff.org's certbot                                                                    
@@ -315,6 +316,8 @@ EOF
 apt-get update                                                                                    
 apt-get -t stretch-backports install certbot
 ```
+
+Tags: ACME, Automatic Certificate Management Environment, CA, eff.org, Electronic Frontier Foundation, LE, Let's Encrypt, 
 
 .
 
