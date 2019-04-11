@@ -88,7 +88,7 @@ https://stackoverflow.com/questions/10585978/
 Only greenhorns have /var residing in /  
 If elsewhere is plenty of space - then move 'n' bind.
 
-#### Why mount --bind? 
+#### Why 'mount --bind' instead of symlinks? 
 
 |        | mount --bind | symlinks |
 |--------|:------------:|:--------:|
@@ -266,14 +266,15 @@ ODrive = OpenDrive AppImage [Explanation on 2DayGeek](https://www.2daygeek.com/o
 .
 
 ## Program : App : Web App : link collection : App Scope
-https://appsco.pe/
+![Logo of ](https://google.com/s2/favicons?domain=https://appsco.pe/) [App Scope](https://appsco.pe/) 
 
 Tags: browser based, home screen, no download, progressive web app, 
 
 .
 
 ## Web : html : badges : Shield.io
-https://shields.io
+
+![Logo of Shield.io](https://google.com/s2/favicons?domain=https://shields.io) [Shield.io](https://shields.io)
 
 Tags: button, dynamic, embedd, make, meta data, query string parameter, svg, tool, URL dependent,
 
@@ -287,7 +288,8 @@ Tags: app, collaboration, color, design, foto, icon, inspire, layout, presentati
 .
 
 ## Program : MultiMedia : Player : cmus
-https://cmus.github.io
+
+[C* cmus](https://cmus.github.io/)
 
 Tags: AAC, bash script, CLI, fast, filter, FLAC, mp3, themes, WAV, vi-like
 
@@ -295,8 +297,8 @@ Tags: AAC, bash script, CLI, fast, filter, FLAC, mp3, themes, WAV, vi-like
 
 ## Security : Credentials : Identity Leak Checker
 
-- https://sec.hpi.uni-potsdam.de/ilc/
-- https://HaveIBeenPwned.com
+- ![Logo of Have I Been Pwned (HIBP)](https://haveibeenpwned.com/favicon.ico) [Have I Been Pwned (HIBP)](https://haveibeenpwned.com/) 
+- ![Logo of Hasso Plattner Institute](https://sec.hpi.uni-potsdam.de/ilc/ico/favicon.ico) [HPI Identity Leak Checker](https://sec.hpi.uni-potsdam.de/ilc/) 
 
 Tags: credential-stuffing-list, hacked, Hasso-Plattner-Institut, Troy Hunt,
 
@@ -335,7 +337,7 @@ weborf --basedir MY_WWW [-i INTERFACE               \ # default: all interfaces
 ```
 Tags: apt, CLI, local, static, virt. Hosts, webdav
 
-
+.
 
 ## Program : Web : Webserver : static : "Boa"
 http://www.boa.org/documentation/
@@ -381,7 +383,7 @@ $ systemctl restart systemd-timesyncd
 
 ## Machine : Maintain : Container : Docker : Remotely : "ssh-docker"
 
-From [PyPi.org](https://pypi.org/project/ssh-docker/)
+![Logo of PyPi.org](https://pypi.org/static/images/logo-small.6eef541e.svg) from [PyPi.org](https://pypi.org/project/ssh-docker/)
 
 .
 
@@ -393,7 +395,7 @@ ServerFault users [https://serverfault.com/questions/3740/](screenrc)
 
 ## Program : Office : Mail : CLI : diverse
 
-Via [TecMint](https://www.tecmint.com/best-commandline-email-clients-for-linux/)
+Via ![Logo of Tecmint.com](https://www.tecmint.com/wp-content/themes/tecmint/images/favicon.ico) [TecMint](https://www.tecmint.com/best-commandline-email-clients-for-linux/)
 
 .
 
@@ -416,6 +418,8 @@ Via [TecMint](https://www.tecmint.com/best-commandline-email-clients-for-linux/)
 Upload via SHell-Yeah for 14 days to [Transfer.sh](https://www.transfer.sh/). Markdown appears beautily formatted.
 
 
+---
+## TMP
 ---
 
 ```
