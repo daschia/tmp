@@ -27,7 +27,6 @@ https://syndication.exoclick.com/splash.php?idzone=1775026&type=8&cb=1055
 ## Web : Tool : E-Commerce : Shop : SnipCart.com
 ![Logo of SnipCart](https://www.google.com/s2/favicons?domain=snipcart.com) [Snipcart](https://snipcart.com) <!-- https://snipcart.com/images/favicons/favicon-16x16.png --> adds a cart platform to your blog, CMS, framework, ... .
 
-
 .
 
 ## Web : Script : Popup-watch in nice words via browser and cron
@@ -180,23 +179,29 @@ https://github.com/tonipes/libresonic-docker
 
 #### Test-Media
 ```
-wget -U 'Mozilla/4.0' http://www.swiatobrazu.pl/zdjecie/artykuly/350404/waclaw-wantuch-1-akt-w-polskiej-fotografii-.jpg
-wget -U 'Mozilla/4.0' http://view.stern.de/de/picture/nsfw/3549778/akt-model-woman-art-female-black-and-620.jpg
-wget -U 'Mozilla/4.0' http://view.stern.de/de/picture/2919441/akt-art-highkey-black-white-sculpture-grey-940.jpg
-wget -U 'Mozilla/4.0' http://www.lowbird.com/data/images/2011/01/0065.jpg
-wget -U 'Mozilla/4.0' http://www.swiatobrazu.pl/zdjecie/artykuly/116294/akt-w-suwalkach.jpg
-wget -U 'Mozilla/4.0' https://heikole-art.net/wp-content/uploads/photo-gallery/IMG_6401.jpg
-wget -U 'Mozilla/4.0' https://iso.500px.com/wp-content/uploads/2015/06/dancer_cover-1500x1000.jpeg
-wget -U 'Mozilla/4.0' http://1.bp.blogspot.com/-rd0UFCCRSNs/TtpmDAE8XYI/AAAAAAAAHJ4/fs2NzAr-b_g/s1600/120508.jpg
-wget -U 'Mozilla/4.0' http://1.bp.blogspot.com/-kE7HnbtZIA4/VqZV1IImBNI/AAAAAAAD-x8/A1DXGEKD4Xg/s1600/espalda-modelo-desnuda-waclaw-wantuch.JPG
-wget -U 'Mozilla/4.0' http://thefappeningblog.com/wp-content/uploads/2017/11/Hunter-McGrady-Nude-5-thefappeningblog.com_.jpg
-wget -U 'Mozilla/4.0' http://s2.glbimg.com/7qyaG8qVlo3FYR2hn1yaFzfC_es=/smart/e.glbimg.com/og/ed/f/original/2015/03/23/goddess2-1247x1247.jpg
-wget -U 'Mozilla/4.0' https://get.pxhere.com/photo/black-and-white-girl-woman-model-darkness-monochrome-grace-hands-beauty-sexy-nude-body-posture-photoshoot-elegance-breast-nipple-erotica-beautiful-girl-naked-girl-without-clothes-sense-monochrome-photography-art-model-1191518.jpg
+while read line , do wget -U 'Mozilla/4.0' $line ; done <<'EOF'
+ foo
+EOF
 ```
+<!--
+http://www.swiatobrazu.pl/zdjecie/artykuly/350404/waclaw-wantuch-1-akt-w-polskiej-fotografii-.jpg
+http://view.stern.de/de/picture/nsfw/3549778/akt-model-woman-art-female-black-and-620.jpg
+http://view.stern.de/de/picture/2919441/akt-art-highkey-black-white-sculpture-grey-940.jpg
+http://www.lowbird.com/data/images/2011/01/0065.jpg
+http://www.swiatobrazu.pl/zdjecie/artykuly/116294/akt-w-suwalkach.jpg
+https://heikole-art.net/wp-content/uploads/photo-gallery/IMG_6401.jpg
+https://iso.500px.com/wp-content/uploads/2015/06/dancer_cover-1500x1000.jpeg
+http://1.bp.blogspot.com/-rd0UFCCRSNs/TtpmDAE8XYI/AAAAAAAAHJ4/fs2NzAr-b_g/s1600/120508.jpg
+http://1.bp.blogspot.com/-kE7HnbtZIA4/VqZV1IImBNI/AAAAAAAD-x8/A1DXGEKD4Xg/s1600/espalda-modelo-desnuda-waclaw-wantuch.JPG
+http://thefappeningblog.com/wp-content/uploads/2017/11/Hunter-McGrady-Nude-5-thefappeningblog.com_.jpg
+http://s2.glbimg.com/7qyaG8qVlo3FYR2hn1yaFzfC_es=/smart/e.glbimg.com/og/ed/f/original/2015/03/23/goddess2-1247x1247.jpg
+https://get.pxhere.com/photo/black-and-white-girl-woman-model-darkness-monochrome-grace-hands-beauty-sexy-nude-body-posture-photoshoot-elegance-breast-nipple-erotica-beautiful-girl-naked-girl-without-clothes-sense-monochrome-photography-art-model-1191518.jpg
+-->
 
 #### Container: "AirSonic"
 ```
-docker create --name=air -ePUID=1000 -eGUID=1000 -p4040:4040 --restart unless-stopped -v/root/5:/media linuxserver/airsonic
+docker create --name=air -ePUID=1000 -eGUID=1000 -p4040:4040 \
+ --restart unless-stopped -v/root/5:/media linuxserver/airsonic
 
 curl ifconfig.io
 40.117.119.219:4040
@@ -313,9 +318,9 @@ Tags: credential-stuffing-list, hacked, Hasso-Plattner-Institut, Troy Hunt,
 
 ```
 cat <<'EOF' > /etc/apt/sources.list
-#   bwn for eff.org's certbot                                                                    
-# https://backports.debian.org/Instructions/                                                      
-deb http://deb.debian.org/debian stretch-backports main                                           
+ #   bwn for eff.org's certbot                                                                    
+ # https://backports.debian.org/Instructions/                                                      
+ deb http://deb.debian.org/debian stretch-backports main                                           
 EOF
 apt-get update                                                                                    
 apt-get -t stretch-backports install certbot
@@ -330,19 +335,19 @@ linux magazin 03/19 "Snapsch&uuml;sse"
 
 - ![Logo of Qt-FSArchiver](https://www.google.com/s2/favicons?domain=sourceforge.net) [Qt-FSArchiver](https://sourceforge.net/projects/qt-fsarchiver/)
 - ![Logo of CyberWS.com](https://www.google.com/s2/favicons?domain=CyberWS.com) [Cya](https://CyberWS.com/bash/cya)
-- ![Logo of GitHub]](https://www.google.com/s2/favicons?domain=gitub.com) [Cya on GitHub](https://gitub.com/cleverwise/cya)
+- ![Logo of GitHub](https://www.google.com/s2/favicons?domain=gitub.com) [Cya on GitHub](https://gitub.com/cleverwise/cya)
 
 .
 
 ## Program : Web : Webserver : static : "WebOrf"
 https://ltworf.github.io/weborf
 ```
-weborf --basedir MY_WWW [-i INTERFACE               \ # default: all interfaces
-       --index   LIST_OF_FILES_INTERPRETED_AS_INDEX \ # default: directory indexing; index.htm ignored
-        -p       PORT                               \ # default: 8080
-        -V       VIRT_HOSTS]                          # for multiple dirs
+weborf --basedir MY_WWW [-i INTERFACE               \   # default: all interfaces
+       --index   LIST_OF_FILES_INTERPRETED_AS_INDEX \   # default: directory indexing; index.htm ignored
+        -p       PORT                               \   # default: 8080
+        -V       VIRT_HOSTS]                            # for multiple dirs
 ```
-Tags: apt, CLI, local, static, virt. Hosts, webdav
+Tags: apt, CLI, local, static, virt. hosts, webdav
 
 .
 
