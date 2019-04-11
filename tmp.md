@@ -30,7 +30,7 @@ https://syndication.exoclick.com/splash.php?idzone=1775026&type=8&cb=1055
 
 .
 
-## Popup-watch in nice words via browser and cron
+## Web : Script : Popup-watch in nice words via browser and cron
 
 The website https://7070.org says s.th. like: "Es ist fünf vor zwölf - every 300 sec.
 What if it pops up and fills the screen regularly to show you that knocking-off time is comin soon?
@@ -45,7 +45,7 @@ WTF:
 
 .
 
-## Cloud : host : diverse
+## Cloud : Hosting : diverse
 
 instantview, up download
 - ![Logo of userscloud.com](https://www.google.com/s2/favicons?domain=https://userscloud.com) [UsersCloud.com](https://userscloud.com) <!-- https://userscloud.com/avatar/logo_s.jpg -->
@@ -58,7 +58,8 @@ stream, instantview, up download
 
 ## Backup : cloud &amp; on premise (via CLI) : encrypted : Duplicacy
 
-![Logo of Duplicacy](https://duplicacy.com/img/duplicacy.png) [Duplicacy.com](https://duplicacy.com)
+![Logo of Duplicacy](https://www.google.com/s2/favicons?domain=duplicacy.com) <!-- https://duplicacy.com/img/duplicacy.png -->
+[Duplicacy.com](https://duplicacy.com)
 
 - deduplication
 - incremental
@@ -67,7 +68,7 @@ stream, instantview, up download
 
 .
 
-## PCS.CMD: free in %
+## GNU/Linux : CMD : 'free' in %
 ```
 free -ht | grep Mem | awk '{print $7/$2 * 100.0}'
 55.45
@@ -83,7 +84,7 @@ https://stackoverflow.com/questions/10585978/
 
 .
 
-## PCS.CMD: / directory is full
+## GNU/Linux : Maintain : Root dir '/'  is full
 
 Only greenhorns have /var residing in /  
 If elsewhere is plenty of space - then move 'n' bind.
@@ -121,13 +122,13 @@ $ sudo systemctl start docker
 ```
 .
 
-## Script : server : webserver : netcat
+## Program : Server : Webserver : Netcat
 ```
 while true; do sudo echo -e "HTTP/1.1 200 OK\r\n\r\n<h1>$(hostname) is live>/h1<$(date +%F)" | sudo nc -vl -p 80 ; done &
 ```
 .
 
-## Program : media : player : CLI : music
+## Program : Media : Player : CLI : Music
 
 *5 CLI music player*  
 https://www.bettertechtips.com/linux/cli-music-player/
@@ -156,16 +157,16 @@ https://askubuntu.com/questions/291910
 
 .
 
-## NET : Portscan : test online
+## NET : Portscan : Test Online
 
-![Logo of My-Addr.com](https://www.google.com/s2/favicons?domain=http://ports.my-addr.com/) [](http://ports.my-addr.com/check-all-open-ports-online.php)
-![Logo of IPFingerPrints](https://www.google.com/s2/favicons?domain=http://www.ipfingerprints.com/) [](http://www.ipfingerprints.com/portscan.php)
+![Logo of My-Addr.com](https://www.google.com/s2/favicons?domain=ports.my-addr.com) [Ports.My-Addr.com](http://ports.my-addr.com/check-all-open-ports-online.php)  
+![Logo of IPFingerPrints](https://www.google.com/s2/favicons?domain=www.ipfingerprints.com) [IPFingerPrints.com](http://www.ipfingerprints.com/portscan.php)
 
-Tags: IP, net, network, online, port, scan, security, 
+Tags: IP, net, network, online, port, scan, security
 
 .
 
-## PCS.APP.MED Media Server
+## Program : Media : Media Server
 https://alternativeto.net/software/xbmc-media-center/
 
 #### Ampache
@@ -204,8 +205,9 @@ docker volume inspect data
 ```
 .
 
-## Web : html : Markdown : Convert : "Pandoc"
-http://ct.de/y1nh
+## Web : Html : Markdown : Convert : "Pandoc"
+![Logo of Pandoc.org](https://www.google.com/s2/favicons?domain=Pandoc.org) [Pandoc.org](http://pandoc.org/)  
+Further links at ![Logo of c't](https://www.google.com/s2/favicons?domain=ct.de) [ct.de/y1nh](http://ct.de/y1nh)
 
 ```
 apt install
@@ -218,13 +220,16 @@ pandoc \
  test.md[doc|...]          # /s = standalone: inkl. skeleton
 echo "<title>$title$</title></head><body><header>$if (toc)$\n$toc$\n$endif$</header>$body$<footer>$copy$</footer>" >> tmpl.html
 ```
+
+Tags: app, CLI, convert, html, markdown, tool
 .
 
-## GFX : Photos : HQ : "VastPhotos"
+## GFX : Photos : HQ : "Vast Photos"
 
-![Logo of VastPhotos.com](https://vastphotos.com/files/uploads/favicon.png) [VastPhotos](https://vastphotos.com) 
+![Logo of VastPhotos.com](https://www.google.com/s2/favicons?domain=vastphotos.com) <!-- https://vastphotos.com/files/uploads/favicon.png --> 
+[VastPhotos](https://vastphotos.com) 
 
-Tags: black & white, colorful, incredible, light, photos, photograph
+Tags: black & white, colorful, incredible, light, photos, photograph, pictures
 
 .
 
@@ -247,13 +252,13 @@ https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-o
 
 .
 
-## Data : Convert : Online : "online-convert.com"
+## Data : Convert : Online : "Online-Convert.com"
 
 1001 possibilities at [Online-Convert](https://online-convert.com)
 
 .
 
-## Web : File Transfer : User 2 User : TakeAFile
+## Web : File Transfer : User 2 User : "Take A File"
 
 Transfer files w/o intermediate cloud only via browser at [Take A File](https://takeafile.com). Any size, confidential, w/o registration, funded by EU.
 
@@ -265,21 +270,21 @@ ODrive = OpenDrive AppImage [Explanation on 2DayGeek](https://www.2daygeek.com/o
 
 .
 
-## Program : App : Web App : link collection : App Scope
+## Program : App : Web App : Link Collection : "App Scope"
 ![Logo of ](https://www.google.com/s2/favicons?domain=https://appsco.pe/) [App Scope](https://appsco.pe/) 
 
-Tags: browser based, home screen, no download, progressive web app, 
+Tags: browser based, home screen, no download, progressive web app
 
 .
 
-## Web : html : badges : Shield.io
-![Logo of Shield.io](https://www.google.com/s2/favicons?domain=https://shields.io) [Shield.io](https://shields.io)
+## Web : Html : Badges : Shield.io
+![Logo of Shield.io](https://www.google.com/s2/favicons?domain=shields.io) [Shield.io](https://shields.io)
 
-Tags: button, dynamic, embedd, make, meta data, query string parameter, svg, tool, URL dependent,
+Tags: button, dynamic, embedd, make, meta data, query string parameter, svg, tool, URL dependent
 
 .
 
-## Web : UIX : link collection : Sans Francisco
+## Web : UIX : Link collection : Sans Francisco
 ![Logo of Sans Francisco](https://www.google.com/s2/favicons?domain=https://sansfrancis.co) [Sans Francisco](https://sansfrancis.co)
 
 Tags: app, collaboration, color, design, foto, icon, inspire, layout, presentation, tool, typo, 
@@ -419,9 +424,9 @@ Via ![Logo of Tecmint.com](https://www.tecmint.com/wp-content/themes/tecmint/ima
 Upload via SHell-Yeah for 14 days to [Transfer.sh](https://www.transfer.sh/). Markdown appears beautily formatted.
 
 
----
+###################################################################################
 ## TMP
----
+
 
 ```
 alias screenhelp='echo "Rename session: C-a :sessionname NEWNAME \n Show, create, rename, next window-title: C-a \", c, A, n \n 
